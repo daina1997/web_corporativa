@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="breakingbad.css">
+    <title>Breaking Bad</title>
+</head>
+<body class="bodyformulario">
+    <h1 id="tituloformulario"> Breaking Bad - Que comience el juego!</h1>
+    <br>
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" name="formulario">
+        <fieldset>
+            <legend><b>Datos Personales</b></legend>
+                <div class="estructura">
+                    Nombre: <input type="text" name="nombre" id="" required>
+                </div>
+                <div class="estructura">
+                    Apellidos: <input type="text" name="apellidos" id="" required>
+                </div>
+                <div class="estructura">
+                    DNI: <input type="text" name="DNI" id="" placeholder="12345678A">
+                </div>
+                <div class="estructura">
+                    Correo electrónico: <input type="email" name="correo" id="" required placeholder="dddd@gmail.com">
+                </div>
+                <div class="estructura">
+                Fecha de nacimiento: <input type="date" name="nacimiento" id="">
+                </div>
+                <div class="estructura">
+                Sexo: 
+                    <div id="masmargen">
+                        <input type="radio" name="sexo" id="Mujer">Mujer
+                        <input type="radio" name="sexo" id="Hombre">Hombre
+                        <input type="radio" name="sexo" id="Otros">Otros
+                    </div>
+                </div>
+                <br>
+                 <b>Dirección Postal:</b>
+                <div class="estructura">
+                    Calle: <input type="text" name="calle" id="" placeholder="C/San Juan">
+                </div>
+                <div class="estructura">
+                    Número: <input type="text" name="numero" id="" placeholder="5" >
+                </div>
+                <div class="estructura">
+                    Piso: <input type="text" name="piso" id=""placeholder="Primer piso">
+                </div>
+                <div class="estructura">
+                    Código Portal: <input type="text" name="codigo postal" id="" >
+                </div>
+                <div class="estructura">
+                    Ciudad: <input type="text" name="ciudad" id="" >
+                </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Queremos saber más</b></legend>
+                
+                <div class="estructura">
+                    ¿Cúal es tu personaje favorito? 
+                    <select name="personaje" id="">
+                        <option value="1">Jessie Pinkman</option>
+                        <option value="2">Walter White</option>
+                        <option value="3">Saul Goodman</option>
+                        <option value="4">Gustavo Fring</option>
+                        <option value="5">Pollos Hermanos</option>
+                        <option value="6">Otros personajes</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="estructura">
+                    Escribe lo que más te gusta de ese personaje:
+                    <br>
+                    <div id="masmargen">
+                        <textarea name="comentario" id="" cols="30" rows="10" minlength="10" maxlength="50" placeholder="Escribe aquí tu opinión"></textarea>
+                    </div>
+                    Puedes adjuntar fotos o archivos si quieres: <input type="file" name="adjuntar" id="" value="Selecciona archivos" accept=".jpg, .pdf" multiple>
+                </div>
+        </fieldset>
+        <br>
+        <br>
+        <div id="boton"> 
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Eliminar">
+        </div>
+
+    </form>
+
+</body>
+</html>
